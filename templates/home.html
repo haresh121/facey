@@ -1,0 +1,10 @@
+<a href="{{ url_for('opencam') }}">predict by camera</a>
+<p>or</p>
+<form
+  action="{{url_for('predpic')}}"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <input type="file" name="photo" />
+  <input type="submit" value="submit" />
+</form>
